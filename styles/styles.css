@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+}
+
+#header{
+    height: 120px;
+    text-align: center;
+    width: 500px;
+}
+
+#header-img{
+    
+    width: 70%;
+}
