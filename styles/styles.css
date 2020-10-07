@@ -3,6 +3,17 @@ body{
     font-weight: bold;
     margin: 0px;
 }
+footer{
+    background-color: teal;
+    height: 20px;
+    position: fixed;
+    
+    top: 97.25%;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+}
 
 .nav-link{
     margin-left: 4px;
@@ -27,17 +38,26 @@ body{
     top: -80px;
 }
 
+#description-div{
+    position: relative;
+    top: 600px;
+}
+
 #form-div{
     background-color: rgb(212, 212, 212);
+    margin-bottom: 20px;
     position: relative;
     text-align: center;
-    top: 800px;
+    top: 780px;
    
 }
 
 #header{
+    background-color: white;
+    height: 145px;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 #header-img{
