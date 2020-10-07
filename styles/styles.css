@@ -1,14 +1,53 @@
 body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     margin: 0px;
 }
 
+.nav-link{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background-color: rgb(90, 117, 205);
+    border-style: groove;
+    border-radius: 5px;
+    color: white;
+}
+
+#company-info{
+    margin-right: 5px;
+    position: relative;
+    text-align: right;
+    top: -80px;
+}
+
 #header{
-    height: 120px;
-    text-align: center;
-    width: 500px;
+    position: fixed;
 }
 
 #header-img{
+    height: 100px;
+    margin: 3px;
+}
+
+#nav-bar{
     
-    width: 70%;
+    align-content: space-around;
+    
+}
+
+#nav-border{
+    border-bottom: rgb(102, 132, 219);
+    border-top: rgb(102, 132, 219);
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none ;
+    
+    
 }
