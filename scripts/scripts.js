@@ -1,22 +1,27 @@
-const vids = ["images/drone.jpg","images/drones-unmanned-aircraft.jpg","images/images_medium.png"];
-const htmlCode1 = '<img src="';
-const htmlCode2 = ' alt=';
-const htmlCode3 = '"Product Image"';
-const leftArrow = document.getElementById("left-arrow");
-const rightArrow = document.getElementById("right-arrow");
-const picContainer = document.getElementById("picture-container");
+const PICS = ["./images/drone.jpg","./images/drones-unmanned-aircraft.jpg","./images/images_medium.png"];
+const LEFTARROW = document.getElementById("left-arrow");
+const RIGHTARROW = document.getElementById("right-arrow");
+const PICCONTAINER = document.getElementById("picture-container");
+const THUMBCONTAINER = document.getElementById("thumbnail-container");
 let currPic = 0;
 
 
-function changePic(){
-    alert(currPic);
+function changePic(change){
+    currPic += change;
+    currPic = (currPic > PICS.length-1) ? 0 : (currPic < 0) ? PICS.length-1 : currPic; 
+    PICCONTAINER.innerHTML = `<img src="${PICS[currPic]}" alt="Drone Pic"> `;
+}
 
-    picContainer.innerHTML = '<img src="' + vids[currPic] + '" alt="Product Page"';
-    currPic = (currPic == vids.length-1) ? 0: currPic++;
-
+function createThumbs(){
+    for(var i = 0; i < PICS.length; i++){
+        THUMBCONTAINER.innerHTML += `<li><a href=''><img src="${PICS[i]}" alt="Drone Pic Thumbnails"></li>`;
+    }
     
 }
 
-changePic();
-leftArrow.addEventListener("click", changePic);
+
+changePic(0);
+createThumbs();
+LEFTARROW.addEventListener("click", () => changePic(-1));
+RIGHTARROW.addEventListener("click", () => changePic(1));
 
