@@ -3,6 +3,7 @@ const LEFTARROW = document.getElementById("left-arrow");
 const RIGHTARROW = document.getElementById("right-arrow");
 const PICCONTAINER = document.getElementById("picture-container");
 const THUMBCONTAINER = document.getElementById("thumbnail-container");
+const PRICE = document.getElementById('price');
 let currPic = 0;
 
 
@@ -18,10 +19,14 @@ function createThumbs(){
     }
     
 }
+function displayPrice(currency){
+    PRICE.innerHTML = `${currency}59.99`;
+}
 
 
 changePic(0);
 createThumbs();
+displayPrice('$');
 LEFTARROW.addEventListener("click", () => changePic(-1));
 RIGHTARROW.addEventListener("click", () => changePic(1));
 

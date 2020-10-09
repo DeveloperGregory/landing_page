@@ -3,7 +3,7 @@
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    
     margin: 0px;
 }
 footer{
@@ -19,6 +19,7 @@ footer a{
 }
 
 .nav-link{
+    font-weight: bold;
     margin-left: 4px;
     margin-right: 4px;
     padding: 4px;
@@ -34,6 +35,12 @@ footer a{
     color: white;
 }
 
+#add-cart{
+    background-color: rgb(194, 104, 2);
+    font-weight: bold;
+    font-size: 12pt;
+}
+
 #company-info{
     margin-right: 5px;
     position: relative;
@@ -42,16 +49,28 @@ footer a{
 }
 
 #description-div{
+    background-color: rgb(102, 132, 219);
+    border-radius: 3px;
+    margin: auto;
+    padding: 3px;
     position: relative;
-    top: 200px;
+    top: 100px;
+    width: 90%;
 }
+
+#description-div #desc-text{
+    padding: 10px;
+    padding-top: 0px;
+}
+
+
 
 #form-div{
     background-color: rgb(212, 212, 212);
     margin-bottom: 20px;
     position: relative;
     text-align: center;
-    top: 780px;
+    top: 100px;
    
 }
 
@@ -87,9 +106,29 @@ footer a{
     top: 120px;
     width: 380px;
 }
+
 #picture-container img{
     height: 98%;
     width: 98%;
+}
+
+#price{
+    
+}
+
+#price-div{
+    align-items: baseline;
+    background-color:  rgb(75, 103, 187);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    top: 100px;
+    width:50%;
 }
 
 #nav-bar{
@@ -144,6 +183,8 @@ footer a{
 
 #thumbnail-container img:hover{
     border-color: black;
+    height: 110px;
+    width: 110px;
 }
 
 #video{
@@ -151,9 +192,8 @@ footer a{
     
 }
 #video-div{
-    
     position: relative;
     text-align: center;
-    top: 800px;
+    top: 120px;
     width:90%;
 }
