@@ -14,15 +14,15 @@
             <div id='nav-border'>
                 <a href="#video-div" class='nav-link'>DRONE VIDEO</a>
                 <a href="#product-images" class='nav-link'>DRONE PICS</a>
-                <a href="#price" class='nav-link'>PRICE</a>
+                <a href="#product-images" class='nav-link'>PRICE</a>
             </div>
             
         </nav>
     </header>
     <div id='product-images'>
-        <div id='right-arrow'></div>
+        <div id='right-arrow'><p><a href="#">&gt;</a></p></div>
         <div id='picture-container'></div>
-        <div id ='left-arrow'></div>
+        <div id ='left-arrow'><p><a href="#">&lt;</a></p></div>
     </div>
     <div id='thumbnail-container'>
         
@@ -39,13 +39,13 @@
         <button id='add-cart'>Add To Cart</button>
     </div>
     <div id='video-div'>
-        <iframe width="475" height="315" id='video' src="https://www.youtube.com/embed/bsnpeLSnBTk" frameborder="2"></iframe>
+        <iframe width="475" height="315" id='video' src="https://www.youtube.com/embed/y3GjIdpCyOw" frameborder="2"></iframe>
     </div>
     <div id='form-div'>
-        <form action="https://www.freecodecamp.com/email-submit">
-            <p>If you are interested in this product we can email you news and sales for this item.</p>
-            <input type="email" placeholder="Enter an Email">
-            <input type="submit" value='Submit'>
+        <form id ='form' action="https://www.freecodecamp.com/email-submit">
+            <p>If you are interested in this product we can email you news and coupons.</p>
+            <input id='email' type="email" placeholder="Enter an Email">
+            <input id='submit' formaction="https://www.freecodecamp.com/email-submit" type="submit" value='Submit' name='email'>
         </form>
     </div>
     <footer>
